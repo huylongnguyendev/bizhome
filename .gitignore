@@ -1,0 +1,42 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- Go Backend ---
+/cmd/server       # File thực thi binary của Go (nếu build ra)
+*.exe                    # Các file chạy .exe trên Windows
+/data/*.db               # Các file cơ sở dữ liệu SQLite cục bộ (tránh đưa dữ liệu thật lên Git)
+/data/*.db-journal
+/data/*.db-shm
+/data/*.db-wal
+
+# --- Frontend (Vite / Bun) ---
+/frontend/node_modules/  # Thư viện tải về (rất nặng, không đưa lên Git)
+/frontend/dist/          # Thư mục build tĩnh của React
+/frontend/.vite/         # Cache của Vite
+
+# --- Môi trường & Hệ điều hành ---
+.env                     # File chứa mật khẩu, cấu hình Cloud DB bảo mật
+.DS_Store                # Rác của macOS
+Thumbs.db                # Rác của Windows
