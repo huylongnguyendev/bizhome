@@ -32,11 +32,11 @@ dist-ssr
 /data/*.db-wal
 
 # --- Frontend (Vite / Bun) ---
-/frontend/node_modules/  # Thư viện tải về (rất nặng, không đưa lên Git)
-/frontend/dist/          # Thư mục build tĩnh của React
-/frontend/.vite/         # Cache của Vite
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.vite/
 
 # --- Môi trường & Hệ điều hành ---
-.env                     # File chứa mật khẩu, cấu hình Cloud DB bảo mật
-.DS_Store                # Rác của macOS
-Thumbs.db                # Rác của Windows
+.env
+.DS_Store
+Thumbs.db
